@@ -1,0 +1,75 @@
+
+#fb-button {
+  color			: #333333;
+  direction		: ltr;
+  font-family		: "lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size		: 11px;
+  text-align		: left;
+  margin-bottom		: 1em;
+  margin-top: 0.5em;
+  float: right;
+}
+
+#fb-button a#fb-fan {
+  padding:3px;
+  width: 11em;
+}
+
+.fb-UIActionButton {
+margin:1px 0 0;
+}
+
+.fb-UIButton_Gray {
+-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1);
+background-color:#EEEEEE;
+border-color:#999999 #999999 #888888;
+}
+
+.fb-UIButton {
+background-image:url("http://www.facebook.com/rsrc.php/z1V2B/hash/apfsevhg.png");
+border-style:solid;
+border-width:1px;
+display:inline-block;
+outline:medium none;
+padding:3px 6px;
+vertical-align:bottom;
+}
+
+.fb-UIButton_Gray .fb-UIButton_Text {
+color:#333333;
+}
+
+.fb-UIButton_Text {
+background-color:transparent;
+border:medium none;
+cursor:pointer;
+display:block;
+font-size:11px;
+font-weight:bold;
+line-height:14px;
+margin:0;
+overflow:visible;
+padding:0;
+width:auto;
+}
+
+span.fb-UIButton_IconNoSpriteMap  {
+background-image:url("http://www.facebook.com/rsrc.php/z1V2B/hash/apfsevhg.png");
+margin-bottom:-1px;
+margin-top:-1px;
+}
+
+.fb-UIButton_Icon	 {
+display:block;
+float:left;
+height:16px;
+margin:-2px 5px 0 0;
+width:16px !important;
+}
+
+div#fb-fan a {
+color:#3B5998;
+cursor:pointer;
+text-decoration:none;
+}
+
