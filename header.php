@@ -11,8 +11,8 @@
 	<style type="text/css" media="screen, projection">
 		@import url( https://daswesentliche.d120.de/wp-content/plugins/schreikasten/css/schreikasten.css );
 		/*@import url( https://www.fachschaft.informatik.tu-darmstadt.de/d120de/css/head.css );*/
-    <?php /*$base = 'http://localhost:8000/djangocms'*/ ?>
-    <?php $base = 'https://www.fachschaft.informatik.tu-darmstadt.de/' ?>
+    <?php $base = 'http://localhost:8000/djangocms' ?>
+    <?php /*$base = 'https://www.fachschaft.informatik.tu-darmstadt.de/'*/ ?>
     @import url( <?php echo $base ?>/static/vendor/bootstrap/dist/css/bootstrap.min.css );
     @import url( <?php echo $base ?>/static/vendor/font-awesome/css/font-awesome.min.css );
     @import url( <?php echo $base ?>/static/vendor/typeface-libre-franklin/index.css );

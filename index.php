@@ -52,10 +52,10 @@
 
 		endwhile; ?>
 
-          <div class="navigation">
-		    <div class="dlft"><?php previous_posts_link('&laquo; spätere Beiträge') ?></div>
-		    <div class="drgt"><?php next_posts_link('frühere Beiträge &raquo;') ?></div>
-		  </div>
+			<ul class="pager">
+				<li class="dlft"><?php previous_posts_link('&laquo; spätere Beiträge') ?></li>
+				<li class="drgt"><?php next_posts_link('frühere Beiträge &raquo;') ?></li>
+		  </ul>
 	    <?php else : ?>
 		  <h2 class="center">Nicht gefunden.</h2>
 		  <p class="center">Es hat keine Treffer gegeben.</p>
