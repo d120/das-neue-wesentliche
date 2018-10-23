@@ -11,20 +11,22 @@
 	<style type="text/css" media="screen, projection">
 		@import url( https://daswesentliche.d120.de/wp-content/plugins/schreikasten/css/schreikasten.css );
 		/*@import url( https://www.fachschaft.informatik.tu-darmstadt.de/d120de/css/head.css );*/
-    <?php $base = 'http://localhost:8000/djangocms' ?>
+    <?php $base = 'http://localhost:8080/djangocms' ?>
     <?php /*$base = 'https://www.fachschaft.informatik.tu-darmstadt.de/'*/ ?>
     @import url( <?php echo $base ?>/static/vendor/bootstrap/dist/css/bootstrap.min.css );
     @import url( <?php echo $base ?>/static/vendor/font-awesome/css/font-awesome.min.css );
     @import url( <?php echo $base ?>/static/vendor/typeface-libre-franklin/index.css );
     @import url( <?php echo $base ?>/static/d120/css/custom.css );
+
+    <?php $color = '#0083CC'; /* $color = '#009D81'; */ ?>
       a, footer a:hover, .sidebar-nav a, .sidebar-nav a:hover {
-        color:#009D81;
+        color: <?php echo $color; ?>;
       }
       .navbar, .links .widget_nav_menu, .sidebar-active, .sidebar-active:hover, .sidebar-active:focus, .sidebar-active > a:hover, .sidebar-active > a:focus, #mainLogo {
-        background-color:#009D81!important;
+        background-color:<?php echo $color; ?>!important;
       }
       .sidebar-active, .sidebar-active:hover {
-        border-left: 5px solid #009D81!important;
+        border-left: 5px solid <?php echo $color; ?>!important;
       }
 	</style>
         <link media="screen,projection" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" title="Standard-Layout" />

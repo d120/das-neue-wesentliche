@@ -30,7 +30,7 @@
      seinen Java-Script-Code einfügt. -->
     <?php wp_footer(); ?>
 
-    <?php $base = 'http://localhost:8000/djangocms' ?>
+    <?php $base = 'http://localhost:8080/djangocms' ?>
     <?php /*$base = 'https://www.fachschaft.informatik.tu-darmstadt.de/'*/ ?>
     <script src="<?php echo $base; ?>/static/vendor/jquery/dist/jquery.min.js"></script>
     <script src="<?php echo $base; ?>/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
