@@ -20,7 +20,7 @@
       a, footer a:hover, .sidebar-nav a, .sidebar-nav a:hover {
         color:#009D81;
       }
-      .navbar, .sidebar-active, .sidebar-active:hover, .sidebar-active:focus, .sidebar-active > a:hover, .sidebar-active > a:focus, #mainLogo {
+      .navbar, .links .widget_nav_menu, .sidebar-active, .sidebar-active:hover, .sidebar-active:focus, .sidebar-active > a:hover, .sidebar-active > a:focus, #mainLogo {
         background-color:#009D81!important;
       }
       .sidebar-active, .sidebar-active:hover {
@@ -57,7 +57,7 @@
         <div class="container">
             <ul class="header-navbar pull-right nav navbar-nav">
                 <li><a href="https://www.fachschaft.informatik.tu-darmstadt.de"><i class="fa fa-home fa-lg"></i> <span class="hidden-xs">Webseite</span></a></li>
-                <li class="active"><a href="https://daswesentliche.fachschaft.informatik.tu-darmstadt.de"><i class="fa fa-newspaper-o fa-lg"></i> <span class="hidden-xs">dasWESENtliche</span></a></li>
+                <li class="active"><a href="<?php echo get_home_url() ?>"><i class="fa fa-newspaper-o fa-lg"></i> <span class="hidden-xs">dasWESENtliche</span></a></li>
                 <li><a href="https://www.fachschaft.informatik.tu-darmstadt.de/forum"><i class="fa fa-comments-o fa-lg"></i> <span class="hidden-xs">Forum</span></a></li>
                 <li><a href="https://www.informatik.tu-darmstadt.de"><i class="fa fa-university fa-lg"></i> <span class="hidden-xs">Fachbereich</span></a></li>
             </ul>
