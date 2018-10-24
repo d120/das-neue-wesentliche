@@ -14,7 +14,7 @@
     <?php /*$base = 'http://localhost:8080/djangocms'*/ ?>
     <?php $base = 'https://www.fachschaft.informatik.tu-darmstadt.de/' ?>
     @import url( <?php echo $base ?>/static/vendor/bootstrap/dist/css/bootstrap.min.css );
-    @import url( <?php echo $base ?>/static/vendor/font-awesome/css/font-awesome.min.css );
+    /*@import url( <?php echo $base ?>/static/vendor/font-awesome/css/font-awesome.min.css );*/
     @import url( <?php echo $base ?>/static/vendor/typeface-libre-franklin/index.css );
     @import url( <?php echo $base ?>/static/d120/css/custom.css );
 
@@ -28,8 +28,10 @@
       .sidebar-active, .sidebar-active:hover {
         border-left: 5px solid <?php echo $color; ?>!important;
       }
-	</style>
-        <link media="screen,projection" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" title="Standard-Layout" />
+  </style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/v4-shims.css">
+  <link media="screen,projection" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" title="Standard-Layout" />
         <!--[if lt IE 7]>
         <style media="screen" type="text/css">
         .inhalt_container2 {
