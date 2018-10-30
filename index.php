@@ -6,10 +6,6 @@
 
   // Enthält Ausgabefunktionen für die Inhaltskästen.
   include 'kaesten.php';
-
-  $layoutcss = '';
-  if ($_GET['zweispaltig'] == '1') { $layoutcss = "2spalten"; }
-  else { $layoutcss = "1spalte"; }
 ?>
     <div class="container">
       <div id="main" class="row">
@@ -40,12 +36,6 @@
         kasten_umfrage($post, $float);
       else :
         kasten_normal($post, $float);
-      endif;
-
-      if (($float == 'float: left;') && ($_GET['zweispaltig'] == '1')) :
-        $float = 'float: right;';
-      else :
-        $float = 'float: left;';
       endif;
 
     endwhile; ?>

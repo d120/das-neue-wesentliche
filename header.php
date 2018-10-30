@@ -87,8 +87,4 @@
   		<div id="MenuSpacerRight"></div>
   	</div>-->
 
-<!--<?php
-	if ($_GET['zweispaltig'] != '1') { echo '<div id="Hintergrundwesen"></div>'; }
-?>-->
-
 	<!--<div class="mantel"><div class="mantel2">-->

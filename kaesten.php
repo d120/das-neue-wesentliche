@@ -2,11 +2,6 @@
 
 // ------------------------------------------------------------------
 function kasten_verweis($post, $float) {
-
-  $layoutcss = '';
-  if ($_GET['zweispaltig'] == '1') { $layoutcss = "2spalten"; }
-  else { $layoutcss = "1spalte"; }
-  if ($Seitenform == 'Einzelseite') { $layoutcss = "Einzelseite"; }
 ?>
   <div class="post post-detail" style="<?php echo $float; ?>" id="post-<?php the_ID(); ?>">
   <div class="verweis" style="<?php echo $float; ?>"><a href="<?php $a = get_post_custom_values('URL'); echo $a[0]; ?>"><?php the_title(); ?></a></div>
@@ -57,13 +52,6 @@ function kasten_normal($post, $float) {
 
 // ------------------------------------------------------------------
 function kasten_vorlage($CSSAttrib, $post, $float, $Seitenform) {
-
-  $layoutcss = '';
-  if ($_GET['zweispaltig'] == '1') { $layoutcss = "2spalten"; }
-  else { $layoutcss = "1spalte"; }
-  if ($Seitenform == 'Einzelseite') { $layoutcss = "Einzelseite"; }
-
-
 ?>
   <div class="post post-intro" style="<?php echo $float; ?>" id="post-<?php the_ID(); ?>">
 
