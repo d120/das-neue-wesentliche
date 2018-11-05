@@ -157,15 +157,39 @@ hr {
   margin-left: -15px;
 }
 
+
+/**** Twitter Widget ****/
 .sidebar .widget_twitter ul
 {
   padding-left: 0;
-	list-style-type: none;
+  list-style-type: none;
+  line-height: 160%;
+  font-size: 90%;
 }
 
 .sidebar .widget_twitter ul li {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
 }
+
+.widget_twitter .entry-meta, .widget_twitter .intent-meta {
+  display: block;
+  font-size: 85%;
+  line-height: 120%;
+  margin: 4px 0;
+  color: #bbb;
+}
+.widget_twitter .entry-meta a, .widget_twitter .intent-meta a {
+  color: #888;
+}
+.widget_twitter .from-meta { display: none; }
+a.in-reply-to, a.retweet, a.favorite {
+    margin: 0 9px 0 0;
+}
+
+
+
+
 
 .links ul li a, .links ul li.widget_twitter span.time-meta a {
   padding      : 1px 0;
@@ -521,10 +545,6 @@ span.sociable_tagline:hover span {
 
 
 
-a.in-reply-to, a.retweet, a.favorite {
-    font-size: 0.9em; margin: 1px;
-}
-
 /* Redesign */
 
 .tag-label {
@@ -546,5 +566,5 @@ a.in-reply-to, a.retweet, a.favorite {
 }
 
 .post.post-intro {
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 }
