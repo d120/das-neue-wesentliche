@@ -3,5 +3,5 @@
     <?php $s = '' ?>
     <input class="form-control" style="width: 100%;" type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="si" />
   </div>
-  <input class="btn btn-default" type="submit" value="<?php _e('Search'); ?>" id="ss" />
+  <input class="btn btn-light" type="submit" value="<?php _e('Search'); ?>" id="ss" />
 </form>

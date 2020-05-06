@@ -40,9 +40,13 @@
 
     endwhile; ?>
 
-      <ul class="pager">
-        <li class="dlft"><?php previous_posts_link('&laquo; spätere Beiträge') ?></li>
-        <li class="drgt"><?php next_posts_link('frühere Beiträge &raquo;') ?></li>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <?php previous_posts_link('&laquo; spätere Beiträge') ?>
+        </li>
+        <li class="nav-item">
+          <?php next_posts_link('frühere Beiträge &raquo;') ?>
+        </li>
       </ul>
       <?php else : ?>
       <h2 class="center">Nicht gefunden.</h2>

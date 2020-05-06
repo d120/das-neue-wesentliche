@@ -10,11 +10,11 @@
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
 	<style type="text/css" media="screen, projection">
 		@import url( https://daswesentliche.d120.de/wp-content/plugins/schreikasten/css/schreikasten.css );
-		/*@import url( https://www.fachschaft.informatik.tu-darmstadt.de/d120de/css/head.css );*/
+		<?php /*@import url( https://www.fachschaft.informatik.tu-darmstadt.de/d120de/css/head.css );*/ ?>
     <?php /*$base = 'http://localhost:8080/djangocms'*/ ?>
     <?php $base = 'https://www.fachschaft.informatik.tu-darmstadt.de/' ?>
     @import url( <?php echo $base ?>/static/vendor/bootstrap/dist/css/bootstrap.min.css );
-    /*@import url( <?php echo $base ?>/static/vendor/font-awesome/css/font-awesome.min.css );*/
+    <?php /*@import url( <?php echo $base ?>/static/vendor/font-awesome/css/font-awesome.min.css );*/ ?>
     @import url( <?php echo $base ?>/static/vendor/typeface-libre-franklin/index.css );
     @import url( <?php echo $base ?>/static/d120/css/custom.css );
 
@@ -22,7 +22,9 @@
       a, footer a:hover, .sidebar-nav a, .sidebar-nav a:hover {
         color: <?php echo $color; ?>;
       }
-      .navbar, .links .widget_nav_menu, .sidebar-active, .sidebar-active:hover, .sidebar-active:focus, .sidebar-active > a:hover, .sidebar-active > a:focus, #mainLogo {
+      #blog-sidebar .widget_nav_menu, .sidebar-active,
+      .sidebar-active:hover, .sidebar-active:focus, .sidebar-active > a:hover,
+      .sidebar-active > a:focus, #mainLogo, #colored-navbar {
         background-color:<?php echo $color; ?>!important;
       }
       .sidebar-active, .sidebar-active:hover {
@@ -32,13 +34,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/v4-shims.css">
   <link media="screen,projection" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" title="Standard-Layout" />
-        <!--[if lt IE 7]>
-        <style media="screen" type="text/css">
-        .inhalt_container2 {
-            width:100%;
-	}
-        </style>
-        <![endif]-->
 
 	<link rel="SHORTCUT ICON" type="image/x-icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -53,38 +48,51 @@
 
   <body onload="wppoll_fix_https()">
 
-    <div class="container" id="header">
-        <a href="https://www.fachschaft.informatik.tu-darmstadt.de"><img src="<?php echo $base ?>/static/d120/img/d120_logo.png" id="mainLogo" alt="D120: Fachschaft Informatik" class="pull-left"></a>
-        <a href="https://www.tu-darmstadt.de" id="responsivelogo"><img src="<?php echo $base ?>/static/d120/img/tu_da_logo.png" alt="Technische Universität Darmstadt" class="pull-right"></a>
-    </div>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <ul class="header-navbar pull-right nav navbar-nav">
-                <li><a href="https://www.fachschaft.informatik.tu-darmstadt.de"><i class="fa fa-home fa-lg"></i> <span class="hidden-xs">Webseite</span></a></li>
-                <li class="active"><a href="<?php echo get_home_url() ?>"><i class="fa fa-newspaper-o fa-lg"></i> <span class="hidden-xs">dasWESENtliche</span></a></li>
-                <li><a href="https://www.fachschaft.informatik.tu-darmstadt.de/forum"><i class="fa fa-comments-o fa-lg"></i> <span class="hidden-xs">Forum</span></a></li>
-                <li><a href="https://www.informatik.tu-darmstadt.de"><i class="fa fa-university fa-lg"></i> <span class="hidden-xs">Fachbereich</span></a></li>
+    <nav class="navbar navbar-logos">
+      <div class="container" id="header">
+        <a href="https://www.fachschaft.informatik.tu-darmstadt.de">
+            <img src="<?php echo $base ?>/static/d120/img/d120_logo.png" id="mainLogo"
+                 alt="D120: Fachschaft Informatik" class="mr-auto">
+        </a>
+        <a href="https://www.tu-darmstadt.de" id="responsivelogo">
+            <img src="<?php echo $base ?>/static/d120/img/tu_da_logo.png" alt="Technische Universität Darmstadt">
+        </a>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand header-navbar" id="colored-navbar">
+        <div class="container justify-content-end">
+            <ul class="nav navbar-nav">
+                <li class="nav-item header-navbar-item">
+                    <a class="nav-link header-navbar-link" href="https://www.fachschaft.informatik.tu-darmstadt.de">
+                        <i class="fa fa-home fa-lg"></i>
+                        <span class="d-none d-sm-inline">Webseite</span>
+                    </a>
+                </li>
+                <li class="nav-item header-navbar-item">
+                    <a class="nav-link header-navbar-link" href="<?php echo get_home_url() ?>">
+                        <i class="fa fa-newspaper-o fa-lg"></i>
+                        <span class="d-none d-sm-inline">dasWESENtliche</span>
+                    </a>
+                </li>
+                <li class="nav-item header-navbar-item">
+                    <a class="nav-link header-navbar-link" href="https://www.fachschaft.informatik.tu-darmstadt.de/forum">
+                        <i class="fa fa-comments-o fa-lg"></i>
+                        <span class="d-none d-sm-inline">Forum</span>
+                    </a>
+                </li>
+                <li class="nav-item header-navbar-item">
+                    <a class="nav-link header-navbar-link" href="https://www.informatik.tu-darmstadt.de">
+                        <i class="fa fa-university fa-lg"></i>
+                        <span class="d-none d-sm-inline">Fachbereich</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </nav>
 
-	  <!--<div id="Header">
-    <a href="https://www.d120.de/das-wesen/"><img src="https://www.fachschaft.informatik.tu-darmstadt.de/d120de/images/das-wesen-der-informatik.png" id="wesen" title="Das Wesen der Informatik" alt="Das Wesen der Informatik"/></a>
-    <a href="https://www.tu-darmstadt.de/"><img src="https://www.fachschaft.informatik.tu-darmstadt.de/d120de/images/athene.png" alt="Athene der TU Darmstadt" title="Athene der TU Darmstadt" id="athene"/></a>
+	  <!--
 
     <h1>Fachschaft Informatik</h1>
     <h2><?php bloginfo('title'); ?> &ndash; <?php bloginfo('description'); ?></h2>
 
     </div>-->
-
-  	<!--<div id="Subheader">
-  		<ul id="Menu1">
-  			  <li class="link"><a href="https://www.d120.de/">Startseite</a></li>
-  			  <li class="current"><a href="https://daswesentliche.d120.de/" >das Wesentliche</a></li>
-  			  <li class="link"><a href="https://www.d120.de/forum/">Forum</a></li>
-  		</ul>
-  		<div id="MenuSpacerLeft"></div>
-  		<div id="MenuSpacerRight"></div>
-  	</div>-->
-
-	<!--<div class="mantel"><div class="mantel2">-->

@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------
 function kasten_verweis($post, $float) {
 ?>
-  <div class="post post-detail" style="<?php echo $float; ?>" id="post-<?php the_ID(); ?>">
+  <div class="post post-detail" id="post-<?php the_ID(); ?>">
   <div class="verweis" style="<?php echo $float; ?>"><a href="<?php $a = get_post_custom_values('URL'); echo $a[0]; ?>"><?php the_title(); ?></a></div>
 
   </div>
@@ -53,7 +53,7 @@ function kasten_normal($post, $float) {
 // ------------------------------------------------------------------
 function kasten_vorlage($CSSAttrib, $post, $float, $Seitenform) {
 ?>
-  <div class="post post-intro" style="<?php echo $float; ?>" id="post-<?php the_ID(); ?>">
+  <div class="post post-intro" id="post-<?php the_ID(); ?>">
 
     <h2><a class="postHeading" href="<?php the_permalink() ?>" rel="bookmark" title="Permanentlink zu dem Beitrag <?php the_title(); ?>"><?php the_title(); ?></a></h2>
 
@@ -107,14 +107,14 @@ endif; ?>
     ?>
 
       <div class="media">
-        <div class="media-left">
-          <?php echo get_avatar($post->post_author); ?>
+        <div class="mr-3 border border-dark">
+          <?php echo get_avatar($post->post_author, 64); ?>
         </div>
         <div class="media-body">
-          <h4 class="tag-list">
-            <span class="label tag-label"><?php the_category('</span> <span class="label tag-label">'); ?></span>
-            <span class="label tag-label"><?php the_tags('', '</span> <span class="label tag-label">', ''); ?></span>
-          </h4>
+          <h5 class="tag-list mt-0">
+            <?php the_category(' '); ?>
+            <?php the_tags('', ' ', ''); ?>
+          </h5>
           <p class="meta-data">
             Geschrieben am <?php the_time('j. F Y'); ?> von <?php GebeDenVollenAutorennamenAus(); ?>
             <small><?php edit_post_link('[bearbeiten]', '', ''); ?></small>.

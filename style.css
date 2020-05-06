@@ -3,7 +3,7 @@ Theme Name: dasNeueWesentliche
 Theme URI: https://github.com/Xiphoseer/das-neue-wesentliche
 Description: Aufbauend auf BlogPimp WidgetNews 1.1 von BlogPimp.de / Lothar Baier. Ursprünglich angepasst für das Wesentliche @ D120 von Andreas Marc Klingler.
 Version: 2.0
-Author: Daniel Schweighöfer
+Author: Daniel Seiler
 Author URI: https://github.com/Xiphoseer
 */
 
@@ -79,13 +79,11 @@ hr {
 .sidebar {
 	list-style-type: none;
 	padding-left: 0;
-	margin-top: 4rem;
-	margin-bottom: 2rem;
+	margin-top: 35px;
+	margin-bottom: 50px;
 }
 
-.sidebar .widget .widgettitle {
-
-}
+.sidebar .widget .widgettitle {}
 
 .sidebar-right .widget {
 	margin-bottom: 2rem;
@@ -96,60 +94,66 @@ hr {
 	border-bottom: 1px solid #ddd;
 }
 
-.links ul {
+#blog-sidebar {
+  font-size: 18px;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+#blog-sidebar ul {
 
 }
 
-.links h2 {
+#blog-sidebar h2 {
   font-size      : 1em;
   margin      : 21px 0px 5px 0;
   padding      : 2px 0;
   color        : #444;
 }
 
-.links .widget {
+#blog-sidebar .widget {
   list-style-type    : none;
   padding-bottom     : 0.4em;
 	margin-bottom: 0;
 }
 
-.links .widget:hover {
+#blog-sidebar .widget:hover {
 	padding-left: 20px;
 }
 
-.links .widget:hover {
+#blog-sidebar .widget:hover {
   background-color: inherit;
   border-left: initial;
 }
 
-.links .widget li {
+#blog-sidebar .widget li {
   list-style-type: none;
 }
 
-.links .widget h2 {
+#blog-sidebar .widget h2 {
   margin: 0;
   padding: 10px 15px 10px 0;
   font-weight: bold;
 }
 
-.links ul li {
+#blog-sidebar ul li {
   margin-bottom      : 0.1em;
 }
 
-.links .widget_nav_menu {
+#blog-sidebar .widget_nav_menu {
 	font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.links .widget_nav_menu h2
+#blog-sidebar .widget_nav_menu h2
 {
   color: #fff;
   line-height: 200%;
 }
 
-.links .widget_nav_menu > div > ul {
+#blog-sidebar .widget_nav_menu > div > ul {
   padding: 10px;
   background-color: #cccccc;
   background-color: rgba(255, 255, 255, .75);
@@ -167,29 +171,29 @@ hr {
   border-bottom: 1px solid #999;
 }
 
-.links ul li a, .links ul li.widget_twitter span.time-meta a {
+#blog-sidebar ul li a, #blog-sidebar ul li.widget_twitter span.time-meta a {
   padding      : 1px 0;
   display      : block;
   margin-top      : 0.3em;
 }
 
-.links ul li.widget_twitter a {
+#blog-sidebar ul li.widget_twitter a {
   display      : inline;
   margin-top      : auto;
 }
 
-.links ul li.current_theme {
+#blog-sidebar ul li.current_theme {
   color        : #d11;
   padding      : 2px 0;
 }
 
-.links ul li.current-cat a,
-.links ul li.current_page_item a {
+#blog-sidebar ul li.current-cat a,
+#blog-sidebar ul li.current_page_item a {
   display      : block;
   font-weight  : bold;
 }
 
-.links ul.letzte li ul.admin {
+#blog-sidebar ul.letzte li ul.admin {
   padding-right      : 0;
   margin-right      : 0;
 }
@@ -201,17 +205,17 @@ hr {
 }
 
 .links_icon {
-  flex: 0 0 5rem;
-	height: 5rem;
+  flex: 0 1 25%;
 	text-align: center;
 	background-color: #eee;
+  margin: 3px;
 }
 
 .links_icon a {
 	display: block;
-	min-height: 3rem !important;
-	min-width: 3rem !important;
-	padding: 1rem;
+  width: 60px;
+  height: 60px;
+	padding: 15px;
 }
 
 .links_icon:hover {
@@ -526,20 +530,6 @@ a.in-reply-to, a.retweet, a.favorite {
 }
 
 /* Redesign */
-
-.tag-label {
-  background-color: #ddd;
-}
-
-.tag-label a {
-  color: #777;
-}
-
-.tag-list {
-  margin-top: -0.5rem;
-	margin-bottom: 0.2rem;
-  line-height: 3rem;
-}
 
 .meta-data {
 	line-height: 2rem;
